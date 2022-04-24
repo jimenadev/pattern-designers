@@ -1,0 +1,19 @@
+Ejercicio para el principio OCP
+
+Has construido una clase GeneradorPrimos con un metodo primos que devuelve
+los numeros primos entre 2 y el número indicado.
+
+Modifica la estructura para que quede cerrada a cambios en la clase GeneradorPrimos,
+pero abierta a la extensión. ¿Y que extensión tenemos prevista?
+
+Queremos que sea fácil crear subclases de GeneradorPrimos que permitan distintas
+ordenaciones de la lista devuelta.
+
+Tienes un test que realiza dos pruebas: test_orden_natural y test_orden_inverso
+
+La clase original (GeneradorPrimos) supera el test_orden_natural. 
+
+Debes realizar tres pasos:
+1 - Modificar la clase GeneradorPrimos para que permita subclases con ordenación específica
+2 - Creaa una subclase de GeneradorPrimos que devuelva la lista de primos de menor a mayor
+3 - Adapta el test para que test_orden_inverso use esta nueva clase
